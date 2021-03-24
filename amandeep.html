@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .con{
+                background-color: lightblue;
+                width:30%;
+                height:80%;
+                font-family: calibri;
+                text-align: center;
+                position: absolute;
+                top:15%;
+                left:35%;
+                border:4px solid black;
+            }
+            #sbutton{
+                background-color:orange;
+                width:20%;
+                height:10%;
+                border: 2px solid black;
+                font-weight: bolder;
+                margin-top:20px;
+                font-family: calibri;
+            }
+            h5{
+                margin-top:10px;
+            }
+        </style>
+  <script>
+        function Amandeep() {
+            var am = document.getElementById("Name").value;          
+            var an = document.getElementById("MobileNo").value;
+            var deep= document.getElementById("EmailId").value;
+           
+            var display = am + ' ' + an + ' ' + deep;
+            document.getElementById('Amandeep').textContent = display;
+             
+        }
+    </script>
+    </head>
+<body id="div0">
+<div class="container con">
+    <h5>Details Form</h5><hr>
+<form id="div1">
+  <label for="Name">Name &nbsp &nbsp &nbsp:</label>
+  <input type="text" id="Name" name="Name"></input><br>
+  <label for="MobileNo">Mob. No. : </label>
+  <input type="MobileNo" id="MobileNo" name="MobileNo"><br>
+  <label for="EmailId">Email ID &nbsp&nbsp: </label>
+  <input type="EmailId" id="EmailId" name="EmailId"><br>
+  <input type="button" value="Submit" id="sbutton" onclick="Amandeep()">
+<br><br><br><br><br><hr>
+
+<span id="Amandeep">
+
+ </span>
+<table>
+ 
+</table>
+</div>
+</body>
+ 
+</html>
